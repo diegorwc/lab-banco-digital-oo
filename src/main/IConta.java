@@ -2,11 +2,11 @@ package main;
 
 public interface IConta {
 	
-	void sacar(double valor);
+	boolean sacar(double valor);
 	
-	void depositar(double valor);
+	boolean depositar(double valor);
 	
-	void transferir(double valor, IConta contaDestino);
+	boolean transferir(double valor, IConta contaDestino);
 	
 	void imprimirExtrato();
 }
